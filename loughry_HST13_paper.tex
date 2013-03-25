@@ -1,0 +1,143 @@
+%
+% Paper to be submitted to the 2013 IEEE International Conference
+% on Technologies for Homeland Security (HST'13), Boston,
+% Massachusetts, 12--14 November 2013.
+%
+% For information on this file please contact Joe Loughry at
+% Tel. +1 303 221 4380 (time zone GMT minus 7 hours) or Email:
+% joe.loughry@stx.ox.ac.uk
+%
+
+\documentclass[10pt,letterpaper,conference]{IEEEtran}
+
+% sort and compress citation numbers in IEEE style:
+\usepackage{cite}
+
+\usepackage[english,british]{babel}
+\usepackage[pdftex]{graphicx}
+
+\usepackage[cmex10]{amsmath}
+\interdisplaylinepenalty=2500
+
+\usepackage{array}
+% Frank Mittelbach's and David Carlisle's array.sty patches and improves
+% the standard LaTeX2e array and tabular environments to provide better
+% appearance and additional user controls. As the default LaTeX2e table
+% generation code is lacking to the point of almost being broken with
+% respect to the quality of the end results, all users are strongly
+% advised to use an enhanced (at the very least that provided by array.sty)
+% set of table tools. array.sty is already installed on most systems. The
+% latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/tools/
+
+\usepackage{caption}
+\usepackage[caption=false,font=footnotesize]{subfig}
+
+\usepackage{fixltx2e}
+
+\usepackage{comment}
+
+\usepackage{url}
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+
+\title{A Model of Certifier and Accreditor Risk Calculation for Multi-Level Systems}
+
+\author{
+	\IEEEauthorblockN{Joe Loughry}
+	\IEEEauthorblockA{Doctoral Student in the Department of Computer Science \\
+		University of Oxford \\
+		Wolfson Building, Parks Road \\
+		Oxford, OX1 3QD, UK \\
+		Email: joe.loughry@stx.ox.ac.uk \\
+		Tel: +1 303 221 4380
+	}
+}
+
+\maketitle
+
+\begin{abstract}
+	\input{abstract.tex}
+\end{abstract}
+
+\def\IEEEkeywordsname{Index Terms}
+
+% update this with valid keywords from http://www.computer.org/mc/keywords/keywords.htm
+
+\begin{IEEEkeywords}
+	cross domain systems, certification and accreditation,
+	security test and evaluation, certification test and evaluation.
+\end{IEEEkeywords}
+
+\IEEEpeerreviewmaketitle
+
+\section{Author Biography}
+
+Joe Loughry received the B.A.\ degree in mathematics from the University of Colorado,
+Boulder in 1986 and the M.S.E.\ degree in software engineering from Seattle University
+in 1996.  He is currently a Ph.D.\ student in computer science at the University of
+Oxford \cite{Loughry2012b}.  He did some of the first research on compromising optical
+emanations and holds U.S.\ patent 6,987,461 on countermeasures.  His research interests
+include cross domain systems, security certification and accreditation testing,
+penetration testing, side channels, and efficient enumeration of subsets.
+
+\begin{comment}
+\begin{figure}[!t]
+    \centering
+	% 'trim' specifies how much to remove from left, bottom,
+	% right, and top edges of an A4 size PDF page.
+	\includegraphics[width=0.5\textwidth,trim=0 19.25cm 2cm 0,clip]{simple-CDS.pdf}
+	\caption{The simplest imaginable cross-domain system.}
+	\label{figure:simple-CDS}
+\end{figure}
+
+\begin{table}[!t]
+	%% increase table row spacing, adjust to taste
+	\renewcommand{\arraystretch}{2.0}
+
+	% if using array.sty, it might be a good idea to tweak the value of
+	% \extrarowheight as needed to properly center the text within the cells
+
+	\caption{Categorisation of findings according to severity.}
+	\label{table:findings}
+	\centering
+	\begin{tabular}{|c|l|}
+		\hline
+		% this uses a trick for centering table headings (required for IEEE style)
+		{\bf Category} & \multicolumn{1}{c|}{\bf Relative Severity} \\ 
+		\hline
+		I & These are show-stoppers. \\
+		\hline
+		II & %
+			\begin{minipage}{0.35\textwidth}
+				\vspace{1mm}Less severe than a Cat I finding but must be
+				corrected before CT\&E can proceed to completion\vspace{1mm}
+			\end{minipage} \\
+		\hline
+		III & %
+			\begin{minipage}{0.35\textwidth}
+				\vspace{1mm}Do not necessarily prevent certification; fix may
+				be deferred up to 180 days after Interim Approval
+				to Operate (IATO)\vspace{1mm}
+			\end{minipage} \\
+		\hline
+		IV & Minor problems, sometimes deferred indefinitely \\
+		\hline
+	\end{tabular}
+\end{table}
+\end{comment}
+
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,consolidated_bibtex_file}
+
+\end{document}
+
