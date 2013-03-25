@@ -1,0 +1,192 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{graphicx}
+\usepackage{url}
+\title{Provisional Application for United States Patent}
+\author{Joe Loughry}
+\date{\today}
+\bibliographystyle{plain}
+\begin{document}
+\maketitle
+
+\section{Title} SYSTEM AND METHOD FOR PREDICTING THE BEHAVIOUR OF ACCREDITORS
+
+\section{Inventor} JOE LOUGHRY
+
+\section{Background of the Invention}
+
+
+Notes: The conventional wisdom holds that security rules ought to be strictly enforced.
+
+
+This invention pertains to security accreditation testing of computer systems, including
+but not limited to cross domain solutions used to construct cross domain systems.\footnote{The
+terms `cross domain solution', `cross domain system', and `accreditation' are defined
+in references \cite{Loughry2010a,Loughry2012a,Loughry2012b}.}  Although the
+scientific papers included with this provisional patent application refer to cross domain
+systems processing classified information, it should be understood that the present invention
+is applicable more widely, for example to privacy sensitive health care records, law
+enforcement sensitive information, financial trading records and other types of financial
+information, or any other category of sensitive information where cross domain systems or
+cross domain solutions are used to transfer information in a controlled manner across
+security boundaries, and security testing is done on cross domain solutions and cross
+domain systems to validate that they are fit for purpose.
+
+The system and method disclosed here allow the cross domain solution developer or installer
+or cross domain system vendor or system integrator to predict the actions and behaviour of
+accreditors during the security accreditation activity.  Accreditation is a security testing
+process that tests a particular computer system that is installed in a particular location.
+It is distinct from the security certification of a product, which is usually done first.
+Accreditation involves an accreditor, who is a person, usually a government official,
+designated to personally accept formal responsibility for the correct operation of the
+system to be accredited.  Accreditation usually lasts for a defined length of time, often a
+maximum of three years, and is periodically reviewed; re-accreditation may be required at
+the accreditor's discretion any time a significant change is made to the accredited system
+or its environment.  Many accreditors work with professional security testers who perform
+security testing and advise the accreditor.  The types of security testing done on systems
+undergoing accreditation often include penetration testing and Independent Verification and
+Validation (IV\&V) testing.
+
+Accreditation can seem an opaque process to developers, vendors, and installers of cross
+domain solutions, system integrators who design cross domain systems incorporating cross
+domain solutions, data owners responsible for systems and networks connected to cross domain
+systems, and government programme offices responsible for sponsoring cross domain solution
+developers.  Especially in the case of cross domain systems, which by definition always
+span security boundaries controlled by mutually distrustful data owners, the cost of
+accreditation is both relatively and in absolute terms expensive, whether measured in time
+or money.  Accreditation of cross domain systems has been shown to be unnecessarily
+expensive because of duplication of security testing caused by conflation of the principle
+of defence in depth with the practice of IV\&V \cite{Loughry2010a}.  The duplication of
+effort has been shown to be a consequence of inadequate communication between or amongst
+accreditors representing data owners at different security classification levels and having
+different security clearances \cite{Loughry2012a}.
+
+The method disclosed here was discovered in the course of research into the reasons why
+cross domain certification and accreditation are so expensive.  It has not been published,
+sold, or offered for sale or public use before the date of this application.
+
+\section{Brief Summary of the Invention}
+
+Using grounded theory methodology, several case studies of cross domain system accreditations
+were analysed.  A theory was discovered, grounded in the data, that ... 
+
+
+
+
+there is an observed correlation between reports of findings issued
+by the certification authority's penetration testers and the cross domain solution developer's
+response to these finding reports.  Briefly, if the developer disputes the penetration testers'
+findings, this tends to prompt the issuance of another report containing more findings, thereby
+delaying completion of the certification process and increasing its cost, whether measured
+in terms of time or money.  By using this discovery, the developer has an opportunity to
+control the number of findings reported during penetration testing, and
+hence at least partly control the schedule of certification testing, which directly affects
+its total cost.  Expressed in the simplest possible terms, at the time that the developer wants
+to terminate the penetration testing phase of the certification activity, the developer should
+stop disputing the findings of the penetration testers.
+
+Given unlimited time and funding, penetration
+testers tend to generate unlimited numbers of findings.  In practice, the amount of findings
+generated by penetration testers during certification testing of a particular product is limited
+in part by the funding made available to the penetration testers by the certification authority.
+Before the discovery described in this invention disclosure, the developer had no way to
+control the schedule of certification.  The developer has to this point always been completely
+at the mercy of the certification authority who controlled entirely the duration of the
+certification process, and hence the cost in money and time before the product being tested
+is certified and can be sold by the developer and used.  This invention balances the equation
+somewhat by giving the developer a share of control over the schedule of certification testing.
+
+\section{Brief Description of the Figures}
+
+Figure 1 shows a flowchart of the relevant portion of the certification test activity.  After
+the certification activity 1 begins and the penetration testers 2 issue their first report of
+findings, the developer 3 has a choice.  If the developer 3 chooses 5 to dispute the report of
+findings by the penetration testers 2, then penetration testers 2 will be prompted to issue
+another report of findings and the cost of the certification activity 1--4 correspondingly
+increases; if the developer 3 chooses 6 not to dispute the report of findings, then the
+penetration testers 2 will be satisfied, and the certification activity 4 can proceed to the
+end, without increasing the total cost of the certification activity 1--4 further.  Note that
+there may be several `YES' iterations 5 before the `NO' branch 6 is finally taken.
+
+\section{Detailed Description of the Invention}
+
+The developer exerts control by modulating the developer's responses to reports of findings
+issued by the penetration testers.  Examples of a cross domain solution developer doing
+this successfully near the end of a CT\&E activity are shown in \cite[Chapter 4]{Loughry2012b}.
+Counterexamples showing what happens when the developer did not follow the method described
+in this invention, e.g., in \cite[Chapter 5]{Loughry2012b} are also helpful in understanding
+the utility of this invention.  It is believed that the developer in the case studies never
+realised that such a control method exists or that the developer was
+ineffectively using it, but the data support the theory that such a control method does exist
+and is effective if used properly.  It works like this: if the developer responds by disputing
+most or all of the penetration testers' findings in finding report $n$, then the probability
+is high that the penetration testers will respond to the developer's response with finding
+report $n+1$, unless funding for the penetration testing effort is terminated by the
+certification authority first.  If, on the other hand, the developer responds to finding
+report $n$ by agreeing with the penetration testers about the reality and importance of the
+findings, suggesting ways to mitigate the findings and in general concurring with the findings,
+then at least in the data studied, the penetration testers are less likely to issue another
+report with more findings, and the certification activity proceeds to a successful conclusion.
+
+The reason for the existence of this correlation is believed to emerge from the nature of
+penetration testing.  Like covert channel analysis---a related form of security testing
+sometimes done on computer systems---penetration testing tends to be open ended
+\cite{NCSC-TG-030,Pulugurtha2008}.  In contrast to regression testing and
+independent verification and validation testing, where testing begins and ends with a set of
+requirements, specifications, and test procedures, penetration testing has no defined end
+state; it simply continues until the penetration testers are satisfied that they have adequately
+tested the device or system under test, or until the penetration testers are
+told to stop by the certification authority.  What was previously unrecognised, however, is
+that the cross domain solution developer in fact has some implicit input into the penetration
+testers' internal decision process to continue or stop.
+
+It might be argued that this is simply human nature and it is obvious that the developer
+could manipulate the penetration testers in the way described.  Apparently it is not obvious,
+however, because in the case studies described here \cite[Chapters 4--5]{Loughry2012b} the
+developer appeared to be unaware of the effect and it was only after analysis of the data
+in the course of writing \emph{ibid.}\ that the correlation between developer responses to
+security testers' findings reports and issuance of new reports containing additional findings
+was discovered.  Consider also a parallel situation: the results of the IBM Corporation's
+research in the nineteen-seventies into programmer productivity as a function of the amount
+of desk space, linear feet of shelf space, presence of interactive terminal, absence of
+telephone interruptions, and private offices vs cubicle working environment, which was prompted
+by observations noted by Brooks during the OS/360 project \cite{Brooks1995}.  The results of
+that research were so surprising
+that IBM built an entire building, the Santa Teresa Laboratory, to further test them
+\cite{DeMarco1999,McCue1978}.  An existence proof independently validating the aforementioned
+result can be seen in the example of Microsoft, who house their programmers in similarly
+private offices and have achieved obvious success in doing so.
+
+\newpage
+\section*{Claims}
+
+\begin{enumerate}
+	\item A method usable by the developer of a cross domain solution to exert some control
+		over the duration of the penetration testing phase of a security certification of
+		said cross domain solution, hence over the schedule and duration of the security
+		certification activity, thereby reducing cost in terms of time and/or money of
+		the certification process.
+\end{enumerate}
+
+\newpage
+\bibliography{consolidated_bibtex_file}
+
+\vfill\noindent
+{\tiny \LaTeX\ build \input{build_counter_1.txt}}
+
+\newpage
+
+\section*{Abstract}
+
+A method for controlling the schedule and thereby the cost of security certification testing
+of cross domain solutions.  The cross domain solution developer controls the number of rounds
+of penetration testing by modulating the developer's formal responses to findings reports
+issued by the penetration testers.  When the developer wishes to terminate the penetration
+testing phase of the certification activity, the developer stops disputing the findings of
+the penetration testers.
+
+\newpage
+
+\includegraphics{./Loughry_provisional_application_1_drawing_1.pdf}
+
+\end{document}
+
