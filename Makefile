@@ -31,6 +31,9 @@ $(pdf_file): $(sources) $(graphics) Makefile
 	@echo "Build `cat $(counter_file)`"
 	chmod a-x,a+r $(pdf_file)
 
+abstract:
+	$(editor) $(abstract)
+
 vi:
 	$(editor) $(source)
 
