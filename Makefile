@@ -25,7 +25,22 @@ slides_sources = $(slides_source)
 
 temporary_files = *.log *.aux *.out *.idx *.ilg *.bbl *.blg .pdf *.nav *.snm *.toc
 
-all: $(slides_pdf_file) $(paper_dvi_file)
+#
+# Note: make requires that we set the value of a variable OUTSIDE any rules.
+#
+timestamp = `date +%Y%m%d.%H%M`
+
+# all: $(slides_pdf_file) $(paper_dvi_file)
+all: $(slides_pdf_file)
+
+commit:
+	make clean
+	git add .
+	git commit -am "commit from Makefile $(timestamp)"
+
+sync:
+	git pull --rebase
+	git push
 
 $(bibtex_file): $(bibtex_source)
 	cp $(bibtex_source) $(bibtex_file)
