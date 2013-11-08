@@ -37,8 +37,6 @@ commit:
 	make clean
 	git add .
 	git commit -am "commit from Makefile $(timestamp)"
-
-sync:
 	git pull --rebase
 	git push
 
