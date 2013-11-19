@@ -3,6 +3,8 @@ target = Loughry_HST13
 paper_target = $(target)_paper
 slides_target = $(target)_slides
 
+documentation = README.md
+
 paper_source = $(paper_target).tex
 slides_source = $(slides_target).tex
 latex_cmd = pdflatex
@@ -28,10 +30,10 @@ temporary_files = *.log *.aux *.out *.idx *.ilg *.bbl *.blg .pdf *.nav *.snm *.t
 #
 # Note: make requires that we set the value of a variable OUTSIDE any rules.
 #
+
 timestamp = `date +%Y%m%d.%H%M`
 
-# all: $(slides_pdf_file) $(paper_dvi_file)
-all: $(slides_pdf_file)
+all: $(slides_pdf_file) $(paper_dvi_file)
 
 commit:
 	make clean
@@ -94,6 +96,7 @@ spell:
 	aspell --lang=EN_GB check $(abstract)
 	aspell --lang=EN_GB check $(paper_source)
 	aspell --lang=EN_GB check $(slides_source)
+	aspell --lang=EN_GB check $(documentation)
 
 wc:
 	wc -w $(abstract)
