@@ -121,3 +121,6 @@ cv:
 bibtex:
 	(cd ../bibtex && make vi)
 
+readme:
+	$(editor) $(documentation)
+
