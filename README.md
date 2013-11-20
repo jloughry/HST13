@@ -1,8 +1,8 @@
 Joe Loughry (joe.loughry@stx.ox.ac.uk)
 ===========
 
-My paper in the 2013 IEEE International Conference on Technologies for Homeland Security (HST'13)
--------------------------------------------------------------------------------------------------
+My paper published in the 2013 IEEE International Conference on Technologies for Homeland Security (HST'13)
+--------
 
 Git Usage Notes
 ---------------
