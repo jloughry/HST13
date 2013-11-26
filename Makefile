@@ -27,11 +27,7 @@ slides_sources = $(slides_source)
 
 temporary_files = *.log *.aux *.out *.idx *.ilg *.bbl *.blg .pdf *.nav *.snm *.toc
 
-include ../Makefiles/git1.mk
-
 all: $(slides_pdf_file) $(paper_dvi_file)
-
-include ../Makefiles/git2.mk
 
 $(bibtex_file): $(bibtex_source)
 	cp $(bibtex_source) $(bibtex_file)
@@ -98,17 +94,5 @@ clean:
 allclean: clean
 	rm -f $(paper_dvi_file) $(slides_pdf_file) $(paper_tarfile) $(compressed_tarfile)
 
-# Convenience targets
-
-notes:
-	(cd ../notes/ && make notes)
-
-quotes:
-	(cd ../notes/ && make quotes)
-
-cv:
-	(cd ../CV/ && make vi)
-
-bibtex:
-	(cd ../bibtex && make vi)
+include common.mk
 
