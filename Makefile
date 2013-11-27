@@ -27,7 +27,7 @@ slides_sources = $(slides_source)
 
 temporary_files = *.log *.aux *.out *.idx *.ilg *.bbl *.blg .pdf *.nav *.snm *.toc
 
-all: $(slides_pdf_file) $(paper_dvi_file)
+all:: $(slides_pdf_file) $(paper_dvi_file)
 
 $(bibtex_file): $(bibtex_source)
 	cp $(bibtex_source) $(bibtex_file)
@@ -79,16 +79,15 @@ vi:
 edit:
 	$(editor) $(slides_source)
 
-spell:
+spell::
 	aspell --lang=EN_GB check $(abstract)
 	aspell --lang=EN_GB check $(paper_source)
 	aspell --lang=EN_GB check $(slides_source)
-	aspell --lang=EN_GB check $(documentation)
 
 wc:
 	wc -w $(abstract)
 
-clean:
+clean::
 	rm -f $(temporary_files)
 
 allclean: clean
