@@ -1,0 +1,1 @@
+move getting of consolidated_bibtex_file into common.mk

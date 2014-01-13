@@ -18,8 +18,6 @@ paper_pdf_file = $(paper_target).pdf
 paper_dvi_file = $(paper_target).dvi
 slides_pdf_file = $(slides_target).pdf
 
-bibtex_file = consolidated_bibtex_file.bib
-bibtex_source = ../bibtex/consolidated_bibtex_source.bib
 abstract = abstract.tex
 
 paper_sources = $(paper_source) $(bibtex_file) $(abstract)
@@ -28,9 +26,6 @@ slides_sources = $(slides_source)
 temporary_files = *.log *.aux *.out *.idx *.ilg *.bbl *.blg .pdf *.nav *.snm *.toc
 
 all:: $(slides_pdf_file) $(paper_dvi_file)
-
-$(bibtex_file): $(bibtex_source)
-	cp $(bibtex_source) $(bibtex_file)
 
 graphics_for_paper = network_grounded_theory_scaled_100.eps venn_diagrams_for_paper-corrected.eps
 
