@@ -38,6 +38,7 @@ compressed_tarfile = $(paper_tarfile).gz
 
 $(paper_dvi_file): $(paper_sources) $(graphics_for_paper) Makefile
 	@echo $$(($$(cat $(paper_counter_file)) + 1)) > $(paper_counter_file)
+	make $(bibtex_file)
 	$(latex_cmd) $(dvi_options) $(paper_source)
 	bibtex $(paper_target)
 	if (grep "Warning" $(paper_target).blg > /dev/null ) then false; fi

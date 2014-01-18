@@ -1,1 +1,1 @@
-move getting of consolidated_bibtex_file into common.mk
+add 'make $(bibtex_file)' near beginning of build to work around dependency problem.
